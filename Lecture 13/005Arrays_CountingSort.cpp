@@ -30,19 +30,22 @@ int main() {
 	int k;
 	cin >> k;
 
+	// time : 2n ~ O(n)
+	// space: k+1 ~ O(k) due to freq[]
+
 	vector<int> freq(k + 1, 0);
 
-	for (int i = 0; i < n; i++) {
+	for (int i = 0; i < n; i++) { // n steps and each step is const
 		// int x = v[i];
 		// freq[x]++;
 		freq[v[i]]++;
 	}
 
-	for (int i = 0; i <= k; i++) {
-		cout << "freq(" << i << ") = " << freq[i] << endl;
-	}
+	// for (int i = 0; i <= k; i++) {
+	// 	cout << "freq(" << i << ") = " << freq[i] << endl;
+	// }
 
-	for (int i = 0; i <= k; i++) {
+	for (int i = 0; i <= k; i++) { // n steps / couts and each step is const
 
 		// print i, freq[i] times
 
