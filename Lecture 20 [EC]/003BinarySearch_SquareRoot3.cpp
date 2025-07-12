@@ -14,6 +14,7 @@ int main() {
 	double e = n;
 
 	double error = 1e-7; // 10^-6
+
 	int numIterations = 80;
 
 	for (int i = 1; i <= numIterations; i++) {
